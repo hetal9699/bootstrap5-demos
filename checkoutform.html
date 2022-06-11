@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout form</title>
+  <link rel="stylesheet" href="bootstrapdemos.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+  <div class="container">
+    <div class="row justify-content-center  ">
+      <div class="text-center col-11 py-5   ">
+        <img src="images/Bootstrap_logo.svg.png" class="bootstraplogo mb-5" alt="">
+        <h1 class="fs-1">Checkout form</h1>
+        <p class="fs-3 text-secondary">Below is an example form built entirely with Bootstrap’s form controls. Each
+          required form group has a validation state that can be triggered by attempting to submit the form without
+          completing it.
+
+        </p>
+
+      </div>
+    </div>
+    <div class="row fs-5">
+      <h2>Billing address</h4>
+      <div class="col-8">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">First name</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Last name</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-12">
+            <label for="autoSizingInputGroup" class="form-label">Username</label>
+            <div class="input-group">
+              <div class="input-group-text">@</div>
+              <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+            </div>
+          </div>
+          <div class="col-12">
+            <label for="inputEmail4" class="form-label">Email <span class="text-secondary">Optional</span></label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="you@example.com">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">Country</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>United States</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>California</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+          <hr class="mt-4">
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Shipping Address is the same as my billing Address
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Save this information for next time
+              </label>
+            </div>
+          </div>
+          <fieldset class="row mb-3">
+            <h2 class="my-3"> Payment</h2>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  Credit Card
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Debit Card
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"
+                  disabled>
+                <label class="form-check-label" for="gridRadios3">
+                  Pay Pal
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Name on card </label>
+            <input type="email" class="form-control" id="inputEmail4">
+            <label for="inputEmail4" class="form-label text-secondary">Full Name displayed as on card </label>
+
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Credit Card number</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-md-2">
+            <label for="inputEmail4" class="form-label">Expiration</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-2">
+            <label for="inputPassword4" class="form-label">CVV</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+          <hr>
+          <div class="col-12 mb-5">
+            <button type="submit" class="btn btn-primary w-100 fs-2">Countinue To checkout</button>
+          </div>
+        </form>
+
+      </div>
+      <div class="col-4 ps-5">
+        <div class="row my-3">
+          <div class="col-6">
+            <p class="text-primary fs-2">
+              Your Cart
+            </p>
+          </div>
+          <div class="col-2">
+            <span class=" float-end py-2 px-3 bg-primary rounded-circle text-white fs-3">3</span>
+
+          </div>
+
+        </div>
+        <div class="card w-100 ">
+
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-9">
+                  <h4 class="m-0">Product name</h4>
+                  <p class="text-secondary m-0">Brief Description</p>
+
+                </div>
+                <div class="col-3">
+                  <p class="text-secondary fs-4">$12</p>
+                </div>
+
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-9">
+                  <h4 class="m-0">Second Product</h4>
+                  <p class="text-secondary m-0">Brief Description</p>
+
+                </div>
+                <div class="col-3">
+                  <p class="text-secondary fs-4">$8</p>
+                </div>
+
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-9">
+                  <h4 class="m-0">Third item</h4>
+                  <p class="text-secondary m-0">Brief Description</p>
+
+                </div>
+                <div class="col-3">
+                  <p class="text-secondary fs-4">$5</p>
+                </div>
+
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-9">
+                  <h4 class="m-0 text-success">Promo code</h4>
+                  <p class="text-secondary m-0 text-secces">EXAMPLECODE</p>
+
+                </div>
+                <div class="col-3">
+                  <p class="text-secondary text-success fs-4">-$5</p>
+                </div>
+
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-9">
+                  <h4 class="m-0">Total(USD)</h4>
+
+                </div>
+                <div class="col-3">
+                  <p class="text-secondary fs-4">$20</p>
+                </div>
+
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="card w-100 my-4 " style="width: 18rem;">
+          <div class="card-header">
+            <div class="btn-group">
+              <button type="button" class="btn btn-outline-secondary fs-4 px-5">Promocode</button>
+
+              <button type="button" class="btn btn-secondary px-4  fs-5">Redeem</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
